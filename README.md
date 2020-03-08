@@ -6,14 +6,14 @@
 ### 支持列表  
 
  - cookie.exe
- > Usage: cookies.exe chrome [prefix]
-	sogou --- sogou browser --- 搜狗
-	360 --- 360 safe browser --- 360
-	360cse --- 360 cse browser --- 360极速
-	2345 --- 2345 browser --- 2345
-	qq --- QQ browser --- QQ
-	chrome --- chrome browser [ <80.x ] --- 谷歌 版本小于80.x
-	firefox --- firefox browser [need prefix] --- 火狐 需要前缀  
+ > Usage: cookies.exe chrome [prefix]  
+	sogou --- sogou browser --- 搜狗  
+	360 --- 360 safe browser --- 360  
+	360cse --- 360 cse browser --- 360极速  
+	2345 --- 2345 browser --- 2345  
+	qq --- QQ browser --- QQ  
+	chrome --- chrome browser [ <80.x ] --- 谷歌 版本小于80.x  
+	firefox --- firefox browser [need prefix] --- 火狐 需要前缀    
 	
  - chrome80.x.exe  
  > 适用于chrome 80.x 及以上版本  
