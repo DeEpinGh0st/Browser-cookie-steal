@@ -90,13 +90,16 @@ if __name__ == "__main__":
     elif bro == "chrome":
         cpath = os.environ['LOCALAPPDATA']+r"\Google\Chrome\User Data\Default\Cookies"
     elif bro == "firefox":
-        if len(sys.argv) != 3:
+        if len(sys.argv) < 3:
             print("Miss prefix !")
-            print("usage: " + sys.argv[0] + " firefox xxxxx")
+            print("usage: " + sys.argv[0] + " firefox xxxxx [xxxxx]")
             sys.exit()
         else:
             prefix = sys.argv[2]
-            cpath = os.environ['APPDATA']+r"\Mozilla\Firefox\Profiles\\"+ prefix + r".default\cookies.sqlite"
+            if len(sys.argv) == 3:
+                cpath = os.environ['APPDATA']+r"\Mozilla\Firefox\Profiles\\"+ prefix + r".default-release\cookies.sqlite"
+            else:
+                cpath = os.environ['APPDATA']+r"\Mozilla\Firefox\Profiles\\"+ prefix + r".default-" + sys.argv[3] + r"\cookies.sqlite"
     else:
         print("Unsupported browser !")
         sys.exit()

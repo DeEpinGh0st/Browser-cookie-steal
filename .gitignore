@@ -1,0 +1,5 @@
+#complie files and dirs
+__pycache__/*
+build/*
+dist/*
+*.spec

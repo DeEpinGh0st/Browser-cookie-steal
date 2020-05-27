@@ -1,5 +1,9 @@
 ## Browser cookie steal  
 
+### 更新日志 2020-5-27  
+> - 更新firefox某些版本路径存在随机字符串处理的问题，新增firefox一个可选参数
+	```cookie.exe firefox prefix [randomstr]```  
+
 ### 适用范围   
 > 此脚本用于解密浏览器保存在本地sqlite数据库中的cookie  
 
